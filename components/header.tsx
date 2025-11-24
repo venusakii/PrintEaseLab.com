@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, ShoppingCart } from "lucide-react"
 
-export default function Header() {
+function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -101,4 +101,5 @@ export default function Header() {
   )
 }
 
+export default Header
 export { Header }
